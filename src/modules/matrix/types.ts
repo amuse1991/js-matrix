@@ -10,7 +10,7 @@ export type Matrix = {
   id: number;
   rows: number;
   columns: number;
-  values?: number[];
+  values: number[][];
 };
 
 // state 타입 정의

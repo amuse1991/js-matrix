@@ -46,7 +46,7 @@ function MatrixItem({ id, rows, columns, values, onRemove }: MatrixItemProps) {
           {Array.from({ length: rows }, (_, ridx) => (
             <tr key={ridx}>
               {Array.from({ length: columns }, (_, cidx) => (
-                <td key={cidx}>1</td>
+                <td key={cidx}>{values[ridx][cidx]}</td>
               ))}
             </tr>
           ))}
